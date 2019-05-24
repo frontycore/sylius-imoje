@@ -1,0 +1,9 @@
+fronty:
+  imoje:
+    gateway_label: IMoje.pl
+    merchant_id: ID obchodníka
+    service_id: ID obchodu
+    service_key: Tajný klíč
+    environment: Prostředí
+    sandbox: Testovací
+    production: Produkční

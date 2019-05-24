@@ -1,0 +1,13 @@
+# Services
+services:
+    fronty.imoje.form.type.configuration:
+        class: Fronty\SyliusIMojePlugin\Form\Type\SyliusIMojeConfigurationType
+        tags:
+            - { name: sylius.gateway_configuration_type, type: imoje, label: fronty.imoje.gateway_label }
+            - { name: form.type }
+
+    fronty.imoje.gateway_factory:
+        class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
+        arguments: [Fronty\SyliusIMojePlugin\SyliusIMojeGatewayFactory]
+        tags:
+            - { name: payum.gateway_factory_builder, factory: imoje }
