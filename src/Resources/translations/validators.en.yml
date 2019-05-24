@@ -1,0 +1,9 @@
+fronty:
+  imoje:
+    configuration:
+      merchant_id:
+        not_blank: Please fill in the required field Merchant ID.
+      service_id:
+        not_blank: Please fill in the required field Service ID.
+      service_id:
+        not_blank: Please fill in the required field Secret Key.

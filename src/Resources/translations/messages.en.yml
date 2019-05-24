@@ -1,0 +1,9 @@
+fronty:
+  imoje:
+    gateway_label: IMoje.pl
+    merchant_id: Merchant ID
+    service_id: Service ID
+    service_key: Secret Key
+    environment: environment
+    sandbox: Testing
+    production: Production
