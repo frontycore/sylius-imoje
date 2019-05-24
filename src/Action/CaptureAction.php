@@ -48,7 +48,6 @@ final class CaptureAction implements ActionInterface, GatewayAwareInterface, Api
 		$model['customerPhone'] = $customer->getPhoneNumber();
 		$model['urlSuccess'] = $token->getAfterUrl() . '&status=settled';
 		$model['urlFailure'] = $token->getAfterUrl() . '&status=rejected';
-		// $model['urlReturn'] = $token->getAfterUrl();
 
 		throw new HttpPostRedirect(
 			$this->api->getApiEndpoint(),

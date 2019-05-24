@@ -18,7 +18,8 @@ final class IMojeApi implements IMojeApiInterface
 		'merchantId' => '',
 		'serviceId' => '',
 		'serviceKey' => '',
-		'environment' => ''
+		'environment' => '',
+		'visibleMethod' => ''
 	];
 
 	/**
@@ -31,7 +32,8 @@ final class IMojeApi implements IMojeApiInterface
             'merchantId',
             'serviceId',
             'serviceKey',
-            'environment'
+            'environment',
+            'visibleMethod'
         ]);
         $this->options = $options;
 	}

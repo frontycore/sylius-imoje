@@ -32,8 +32,6 @@ final class ConvertPaymentAction implements ActionInterface
 		$details['orderId'] = $payment->getNumber();
 		$details['orderDescription'] = $payment->getDescription();
 		$details['customerEmail'] = $payment->getClientEmail();
-		// $details['visibleMethod'] = 'card,pbl,blik,twisto'; // All methods if argument not added
-		$details['visibleMethod'] = 'card,pbl';
 
 		$request->setResult((array)$details);
 	}

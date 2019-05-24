@@ -35,7 +35,8 @@ class SyliusIMojeGatewayFactory extends GatewayFactory
 				'merchantId' => '',
 				'serviceId' => '',
 				'serviceKey' => '',
-				'environment' => ''
+				'environment' => '',
+				'visibleMethod' => 'card,pbl' // All methods: card,pbl,blik,twisto
 			];
 			$config->defaults($config['payum.default_options']);
 
@@ -49,7 +50,8 @@ class SyliusIMojeGatewayFactory extends GatewayFactory
 					'merchantId' => $config['merchantId'],
 					'serviceId' => $config['serviceId'],
 					'serviceKey' => $config['serviceKey'],
-					'environment' => $config['environment']
+					'environment' => $config['environment'],
+					'visibleMethod' => $config['visibleMethod']
 				];
 
 				return new IMojeApi($imojeOptions);
