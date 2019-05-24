@@ -38,13 +38,22 @@ final class IMojeApi implements IMojeApiInterface
         $this->options = $options;
 	}
 
-	public function getApiEndpoint()
+	/**
+	 * @return string
+	 */
+	public function getApiEndpoint(): string
 	{
 		return ($this->options['environment'] === 'sandbox') ?
 			self::URL_SANDBOX :
 			self::URL_PRODUCTION;
 	}
 
+	/**
+	 * @param array $data Transaction fields
+	 * @return array
+	 *
+	 * @see https://www.imoje.pl/developerzy/paywall-api#1
+	 */
 	public function createFields(array $data): array
 	{
 		$data = array_merge($data, (array)$this->options);
@@ -79,6 +88,14 @@ final class IMojeApi implements IMojeApiInterface
 		return (array)$result;
 	}
 
+	/**
+	 * Calculates signature hash.
+	 * @param array $fields Transaction fields.
+	 * @param string $serviceKey Service key from configuration.
+	 * @return string
+	 *
+	 * @see https://www.imoje.pl/developerzy/paywall-api#1 (section "Przykład wyliczenia sygnatury")
+	 */
 	private function createSignature(array $fields, string $serviceKey): string
 	{
 		ksort($fields);
