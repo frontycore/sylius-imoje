@@ -2,7 +2,7 @@
     "name": "fronty/sylius-imoje",
     "type": "sylius-plugin",
     "keywords": ["imoje.pl", "gateway", "payment", "sylius", "sylius-plugin"],
-    "description": "Integration of imoje.pl transaction API to Sylius as a new payment method.",
+    "description": "Integration of imoje.pl Paywall API to Sylius as a new payment method.",
     "license": "MIT",
     "require": {
         "php": "^7.2",
