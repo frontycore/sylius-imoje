@@ -1,0 +1,9 @@
+fronty:
+  imoje:
+    gateway_label: IMoje.pl
+    merchant_id: Identyfikator klienta
+    service_id: Identyfikator sklepu
+    service_key: Klucz sklepu
+    environment: Środowisko
+    sandbox: Testowanie
+    production: Produkcja

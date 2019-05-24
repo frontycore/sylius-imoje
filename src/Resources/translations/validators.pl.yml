@@ -1,0 +1,9 @@
+fronty:
+  imoje:
+    configuration:
+      merchant_id:
+        not_blank: Proszę wypełnić wymagane pole identyfikatora akceptanta.
+      service_id:
+        not_blank: Proszę wypełnić wymagane pole Identyfikator sklepu.
+      service_id:
+        not_blank: Proszę wypełnić wymagane pole klucz sklepu.
